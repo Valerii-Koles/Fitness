@@ -1,0 +1,1700 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul ,nav{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.container{
+	max-width: 1125px;
+	margin: 0 auto;
+
+}
+
+.main_section{
+	background-image: url(../images/background_main.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+}
+
+.biba{
+	position: absolute;
+    width: 320px;
+    height: 100px;
+    bottom: 80px;
+    left: 0px;
+    background-color: #af1c1a;
+    transform: skewY(-4deg);
+    z-index: 5;
+   
+}
+
+.biba:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0px;
+    left: 280px;
+    bottom: -39px;
+    border-top: 95px solid #af1c1a;
+    border-left: 50px solid transparent;
+    border-right: 150px solid transparent;
+    transform: rotate(31deg);
+}
+
+
+.boba{
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    bottom: 138px;
+    left: 0;
+    background-color: #af1c1a;
+    transform: skewY(-4deg);
+    box-shadow: -5px 15px 10px 5px rgb(0 0 0);
+    z-index: 15;
+
+}
+
+.boba:before{
+position: absolute;
+    content: '';
+    width: 68%;
+    height: 20px;
+    top: -35px;
+    right: 22px;
+    background-color: #af1c1a;
+    transform: skew(60deg, 0deg);
+    box-shadow: -5px 10px 10px 5px rgb(0 0 0);
+}
+
+.boba:after{
+        position: absolute;
+    content: '';
+    width: 0;
+    height: 0px;
+    right: 16px;
+    top: -47px;
+    border-top: 45px solid #af1c1a;
+    border-left: 0px solid transparent;
+    border-right: 20px solid transparent;
+    transform: rotate(90deg);
+}
+
+.main_content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.content img{
+	margin: 35px 0 180px 0;
+}
+
+.main_title,.main_subtitle,.sing_up{
+	text-transform: uppercase;
+	color: #fff;
+
+}
+
+.content{
+	background: url(../images/bgc_red.png);
+	background-position: -40px 160px;
+    width: 383px;
+    background-repeat: no-repeat;
+    padding-bottom: 190px;
+}
+
+.content_sing{
+	max-width: 250px;
+}
+
+.main_title{
+	font-size: 72px;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.main_subtitle{
+	font-size: 30px;
+	font-weight: 300;
+	margin: 15px 0 190px 0;
+	font-family: 'Roboto' , sans-serif;
+}
+
+.sing_up{
+	margin: 260px 0 25px 0;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+}
+
+.content_sing a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #af1c1a;
+	padding: 14px 25px;
+	border:1px solid #af1c1a;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+}
+
+
+
+.welcome{
+	position: relative;
+    margin: -80px 0 0 0;
+    background: linear-gradient(190deg, #20191b 46%,#000 46%, #af1c1a 46% ,#901815 100%);
+    padding: 0px 0 30px 0;
+    z-index: 10;
+
+    
+}
+
+.welcome:before{
+	position: absolute;
+    content: '';
+    width: 100%;
+    height: 20%;
+    top: -48px;
+    left: 0;
+    background: linear-gradient( to top left, #1f191b,#1f191b);
+    transform: skewY(-4deg);
+    z-index: 0;
+}
+
+.menu_content{
+	padding-bottom: 160px;
+}
+
+
+
+
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px 0 160px 0;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	z-index: 5;
+}
+
+.menu_burger{
+     	display: none;
+     }
+
+
+.menu li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	transition: 1s ease;
+	position: relative;
+
+}
+
+
+.menu li{
+	margin: 0 30px 0 0;
+}
+
+.menu li a:hover{
+     color: #af1c1a;
+
+
+}
+
+.menu li a:before{
+	content: "";
+	height: 2px;
+	width: 0;
+	background: #af1c1a;
+	position: absolute;
+	transition: all 1s ease;
+	bottom: 0;
+	left: 50%;
+}
+
+.menu li a:hover:before{
+	width: 100%;
+	left: 0;
+}
+
+.menu li:last-child{
+	margin: 0;
+}
+
+.about{
+	color: #fff;
+	display: flex;
+    position: relative;
+	margin-bottom: 30px;
+}
+
+.left{
+	padding-left: 105px;
+	margin: -50px 0 0 0;
+	
+}
+
+.left img {
+	padding-bottom: 35px;
+}
+
+.left h3{
+	position: absolute;
+    transform: rotate(-90deg);
+    top: 20%;
+    font-size: 30px;
+    left: -5.5%;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
+.about_title{
+	text-transform: uppercase;
+	font-size: 24px;
+	margin: 0 105px 30px 0;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+    text-align: right;
+    color: #fff;
+}
+
+.right p{
+	font-size: 16px;
+	margin-bottom: 15px;
+	max-width: 451px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+
+.right p+p{
+	margin: 0;
+}
+
+.image{
+	display: flex;
+
+}
+
+.image img{
+	margin-right: 30px;
+}
+
+
+
+.red_hall{
+   margin-top: -250px;
+    text-align: center;
+    position: relative;
+}
+
+
+.fitness h3{
+	position: absolute;
+    top: 55%;
+    left: 93%;
+    transform: rotate(90deg);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.fitness img{
+	margin: 160px 0 35px 0;
+
+}
+
+
+.fitness_hall img{
+	margin-right: 25px;
+}
+
+.btn_prev{
+	position: absolute;
+	border: 1px solid #fff;
+	padding: 20px;
+    background: none;
+    top: 50%;
+    left: 10%
+
+}
+
+.btn_prev:before{
+	position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 40%;
+    top: 35%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(135deg);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.btn_next{
+	position: absolute;
+	border: 2px solid #fff;
+	padding: 20px;
+    background: none;
+    top: 50%;
+    left: 85%
+}
+
+
+.btn_next:before{
+	position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 30%;
+    top: 35%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.personal_trainee{
+	position: relative;
+	z-index: 5;
+	background: linear-gradient(to right, #20191b ,#000);
+}
+
+.coach{
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.personal_trainee:before{
+	position: absolute;
+    content: '';
+    width: 50%;
+    height: 30%;
+    top: -25%;
+    left: 0;
+    transform: skewY(5deg);
+    background:linear-gradient(to bottom right,#941816,#951916);
+
+
+}
+
+.personal_trainee:after{
+	position: absolute;
+    content: '';
+    width: 50%;
+    height: 30%;
+    top: -25%;
+    right: 0;
+    transform: skewY(-5deg);
+    background: linear-gradient(to bottom right,#941816,#9c1a17);
+
+}
+
+
+.trainee_more{
+	text-align: center;
+	padding: 150px 0 0 0;
+}
+
+
+.trainee_more h3{
+	font-size: 	30px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.trainee_more h2{
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px 0 30px 0;
+	font-family: 'Roboto' , sans-serif;
+	font-weight: 800;
+}
+
+.trainee_more a{
+	text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #af1c1a;
+    padding: 15px 30px;
+    border: 1px solid #af1c1a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+.group h3{
+	text-transform: uppercase;
+	color: #fff;
+	 font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    border-right:35vw solid #af1c1a; 
+    border-left:35vw solid #af1c1a;
+}
+
+.coach img{
+	padding: 0 130px 0 0;
+}
+
+.coach img+img{
+	padding-top: 50px;
+}
+
+.coach img:first-child{
+	padding: 0;
+}
+
+.week{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 0 30px 0;
+}
+
+.week li{
+	margin: 0 70px 0 0;
+}
+
+.week li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: 0.7;
+	transition: .5s ease;
+}
+
+.week li a:hover{
+	opacity: 1;
+}
+
+.week li:last-child{
+	margin-right: 0;
+}
+
+.time_training{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 5;
+}
+
+.time_training time{
+	color: #000;
+	font-size: 30px;
+	padding: 0 20px 0 35px;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+
+
+.time_training li{
+	background: #b8b2b2;
+   padding: 15px 0 0 0;
+    font-size: 18px;
+    margin: 0 30px 15px 0;
+    width: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.schedule{
+	display: flex;
+	padding-left: 85px;
+}
+
+i{
+	font-size: 15px;
+	vertical-align: super;
+}
+
+.look_here{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 50px 0;
+}
+
+.look_here h3{
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 150px;
+    left: -69px;
+    z-index: 5;
+}
+
+.kalendar{
+	max-width: 350px;
+	position: relative;
+	z-index: 5;
+}
+
+.name{
+   background: linear-gradient(to bottom, #af1c1a, #8f1816);
+   padding: 30px 0 30px 135px;
+   position: relative;
+
+}
+
+
+.name p {
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+ }
+
+ .name p+p{
+ 	font-size: 18px;
+ 	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 15px 0 0 0;
+ }
+
+ .month{
+ 	color: #fff;
+ 	text-align: center;
+ 	padding: 30px 0;
+ 	background-color: #481c1c;
+
+ }
+
+
+
+
+.days{
+	display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-wrap: wrap;
+    background-color: #481c1c;
+      padding: 0 0 30px 0;
+}
+
+.days li{
+	width: 14%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+}
+
+.days li:nth-child(n+8){
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.number{
+	font-size: 30px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 20%;
+    right: 70%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.kalendar a{
+	position: absolute;
+	border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 5px;
+    height: 5px;
+    color: #fff;
+    top: 41%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.kalendar a+a{
+	top: 41%;
+    left: 77%;
+    transform: rotate(135deg);
+	
+}
+
+
+.active{
+	background-color: #af1c1a;
+	border-radius: 50%;
+	clip-path: circle(35%);
+}
+
+.price{
+	background: linear-gradient(to bottom, #ad1c1a, #8f1716);
+	position: relative;
+	margin-top: -30px;
+}
+
+.price:before{
+	position: absolute;
+    content: '';
+    width: 50%;
+    height: 75%;
+    top: -60%;
+    left: 0;
+    background: linear-gradient(to right ,#1f181a, #110e0f);
+    transform: skewY(-8deg);
+}
+
+.price:after{
+	position: absolute;
+	content: '';
+	width: 50%;
+	height: 75%;
+    top: -60%;
+	right: 0;
+    background: linear-gradient(to right ,#110d0e,#0c090a, #000000);
+	transform: skewY(8deg);
+
+}
+
+
+.price h4{
+	text-align: center;
+	padding: 120px 0 60px 0;
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.money{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 230px 0;
+}
+
+.info_money{
+    text-align: center;
+    width: 350px;
+    position: relative;
+  
+}
+
+h5:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 100%;
+    left: 15%;
+	border-top: 25px solid #481c1c;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+}
+
+
+
+h5{
+  background-color: #481c1c;
+  padding: 20px 0;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+ font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.cash{
+	background-color: #b8b2b2;
+	padding: 30px 0;
+	font-size: 30px;
+	 font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+.team{	
+	box-shadow: 0 14px 28px rgba(0,0,0,1), 0 10px 10px rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 5;
+	background: linear-gradient(to bottom, #191315, #1f191b);
+}
+
+.team:after{
+	position: absolute;
+    content: '';
+    width: 100%;
+    height: 65%;
+    top: -25%;
+    left: 0;
+    background: linear-gradient(to bottom right,#1b1517, #1a1416);
+    transform: skewY(-4deg);
+}
+
+
+.team_content{
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	
+	padding: 0 0 100px 110px;
+}
+
+.team_content img{
+	padding: 100px 95px 120px 0;
+    margin-top: -190px;
+    z-index: 5;
+}
+
+.trainee_info{
+    position: absolute;
+    max-width: 540px;
+    top: 15%;
+    background: linear-gradient(to bottom, #8f1716, #9d1a17);
+    left: 10%;
+    z-index: 10;
+}
+
+.trainee_info .prev{
+	border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 40%;
+    left: 90%;
+}
+
+.trainee_info .prev:before{
+	position: absolute;
+	content: '';
+	width: 7px;
+    height: 7px;
+	top: 40%;
+    left: 30%;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(-45deg);
+}
+
+.trainee_info .next{
+	border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 65%;
+    left: 90%;
+}
+
+.trainee_info .next:before{
+	position: absolute;
+	content: '';
+	width: 7px;
+    height: 7px;
+	top: 20%;
+    left: 30%;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(135deg);
+}
+
+
+
+
+.trainee_info h2{
+	font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0 30px 0;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 800;
+    margin: 0 0px 0 20px;
+}
+
+
+.trainee_info p{
+	color: #fff;
+	font-size: 16px;
+    margin: 10px 75px 10px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+.trainee_info p:last-child{
+	color: #fff;
+	font-size: 18px;
+    margin: 10px 75px 30px 20px;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 600;
+
+}
+
+
+.team h3{
+	position: absolute;
+    transform: rotate(-90deg);
+    top: 15%;
+    font-size: 30px;
+    left: -2%;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    z-index: 5;
+}
+
+
+.prev{
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    bottom: 10%;
+    left: 35%;
+    border: 2px solid #fff;
+}
+
+.prev:before{
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	top: 40%;
+	left: 45%;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(-135deg);
+}
+
+.next{
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    bottom: 10%;
+    right: 35%;
+    border: 2px solid #fff;
+}
+
+.next:before{
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	top: 40%;
+	left: 35%;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(45deg);
+}
+
+
+.footer{
+	background: url(../images/footer_image.png) no-repeat center / cover;
+}
+
+.footer_form{
+	text-align: center;
+	background: linear-gradient(to bottom, #ad1c1a, #8f1816);
+	max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_form:before{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 70px;
+	bottom: -5%;
+	left: 0;
+	background: #ad1c1a;
+	transform: skewY(5deg);
+	background: linear-gradient(to bottom, #921716,#8f1715);
+}
+
+.footer_form:after{
+	content: '';
+    position: absolute;
+    width: 50%;
+    height: 70px;
+    bottom: -5%;
+    right: 0;
+    background: #ad1c1a;
+    transform: skewY(-5deg);
+    background: linear-gradient(to bottom, #921716,#8f1715);
+}
+
+.footer_form h4{
+	color: #fff;
+	padding: 75px 0 10px 0;
+	font-size: 30px;
+	font-family: 'Roboto' , sans-serif;
+    font-weight: 400;
+}
+
+.footer_form h2{
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-bottom: 45px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+}
+
+form{
+	display: flex;
+	flex-wrap: wrap;
+	width: 550px;
+	margin: 0 auto;
+}
+
+input{
+	width: 255px;
+	height: 30px;
+	margin: 0 0 15px 0;
+	outline: none;
+}
+
+input + input{
+	margin: 0 0 0 12px;
+}
+
+
+input[placeholder]{
+	padding: 5px 0 5px 10px;
+	font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+textarea{
+	width: 540px;
+	height: 75px;
+	resize: none;
+	outline: none;
+}
+
+textarea[placeholder]{
+	padding: 5px 0 5px 10px;
+	font-size: 16px;
+	font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+input:last-child{
+	margin: 15px auto 50px;
+	width: 115px;
+	height: 40px;
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+	cursor: pointer;
+}
+
+.our_contact{
+	display: flex;
+    justify-content: space-around;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 0 0 60px;
+}
+
+.connection{
+	text-align: left;
+}
+
+
+.connection li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Roboto' , sans-serif;
+    font-weight: 400;
+
+}
+
+.connection li{
+	position: relative;
+}
+
+.connection li{
+	padding: 0 0 35px 0;
+}
+
+
+.connection li a:before{
+	content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -30%;
+    background: url(../images/maps.png) no-repeat center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+.connection li + li a:before{
+	content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -10%;
+    left: -30%;
+    background: url(../images/email.png) no-repeat center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+.connection li + li +li a:before{
+	content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -30%;
+    background: url(../images/phone.png) no-repeat center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 7px;
+}
+
+
+
+
+.social{
+	display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin: -40px 0 0 0;
+}
+
+.social li{
+	margin: 0 3px -40px 3px;
+	padding-top: 10px;
+}
+
+
+.social li a{
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url(../images/css_sprites_social.png);
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.social li + li a{
+	background-position: -26px 0;
+}
+
+
+.social li + li + li a{
+	background-position: -52px 0;
+}
+
+
+.last{
+	background-color: #000;
+}
+
+.last p{
+	color: #fff;	
+	font-size: 12px;
+	text-align: left;
+	padding: 35px 0;
+	text-align: right;
+}
+
+.last p{
+	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.menu_social h2{
+	font-size: 16px;
+	position: relative;
+	z-index: 5;
+	padding-bottom: 35px;
+
+}
+
+.contact{
+	padding: 0px 0 30px 0;
+}
+
+
+/*AIzaSyDgKg-C-eA3FJP8qkngZ54yECadLxFZk1w*/
+
+#map{
+	width: 260px;
+	height: 160px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container{
+    	max-width: 950px;
+    }
+
+    .biba,.boba ,.coach img,.price:before,.price:after,.team:after, h3{
+    	visibility: hidden;
+    }
+
+    .welcome {
+    	margin: -200px auto 0;
+    	background: linear-gradient(#20191b 55%,#000 55%, #af1c1a 55% ,#901815 100%);
+    }
+
+    .welcome:before  {
+    	visibility: hidden;
+    }
+
+
+    .menu{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+    .menu li{
+	margin: 0;
+}
+   .about{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .left {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+   }
+
+   .left img{
+   	padding: 0;
+   }
+
+   .money {
+   	flex-wrap: wrap;
+    padding: 0 0 100px 0;
+    justify-content: center;
+   }
+
+   .personal_trainee:before, .personal_trainee:after
+    ,.trainee_info .next,.trainee_info .prev
+   {	
+	visibility: hidden;	
+	}
+
+	.group h3{
+		visibility: visible;
+		margin: -100px 0 150px 0;
+	}
+
+	.info_money{
+		margin: 0 10px;
+		width: 30%;
+	}
+
+	.price h4{
+		padding: 50px 0;
+	}
+
+	.trainee_more{
+	margin: 0;
+	padding: 0 0 150px 0;
+	}
+
+	.team_content{
+		padding: 0 0 0 0;	
+	}
+
+	.week{
+		margin: -150px 0 0 0;
+		justify-content: space-between;
+	}
+
+	.week li {
+        margin: 0 35px 0 0;
+	}
+
+	.kalendar {
+		margin: 0 auto;
+        width: 100%;
+	}
+
+	.name {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.image {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image img{
+           margin: 0 0 0 0;
+           padding: 0 0 10px 0;
+	}
+
+	.image img:last-child{
+           padding: 0;
+	}
+
+	.fitness_hall img:last-child{
+		margin: 0;
+	}
+
+	.schedule{
+		padding: 0;
+	}
+
+
+	.time_training{
+		width: 90%;
+		padding: 0;
+		justify-content: space-between;
+	}
+
+	.time_training li{
+		margin-right: 0;
+		padding: 15px 0;
+	}
+
+	.btn_prev {
+		left: 5%;
+	}
+
+	.btn_next{
+		left: 90%;
+	}
+     
+    .trainee_info{
+    	position: relative;
+    	width: 50%;
+    	left: 0;
+    	margin: 0px 10px 0 0;
+
+    }
+
+    .team_content img{
+    	width: 50%;
+    	padding: 0;
+    	margin: 0px 0px 0 10px;
+    }
+
+    .team {
+    	padding: 50px 0 150px 0 ;
+    }
+
+    .prev,.next {
+    	bottom: -35%;
+    }
+
+    .right p{
+    	width: 40%;
+    	margin: 0 35px;
+    }
+
+    .right p+p{
+    	width: 40%;
+    	margin: 0 20px;
+    }
+
+    .kalendar a {
+    	top: 39%;
+    }
+
+    .kalendar a+a{
+    	top: 39%;
+    }
+
+    .right{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    }
+
+     .about_title {
+     	visibility: visible;
+     	text-align: center;
+     	margin: 0 0 50px 0;
+     }
+
+     .coach img {
+        padding: 0;
+     	display: none;
+
+     }
+
+     .coach {
+     	margin: 0 auto;
+     	justify-content: center;
+     }
+
+     .trainee_more h3 {
+     	visibility: visible;
+     	padding: 20px 0 0 0;
+     }
+
+   /*  .menu_burger{
+     	display: block;
+     	position: relative;
+     	width: 50px;	
+     	height: 40px;
+     }
+
+
+     .menu_burger:before,
+     .menu_burger:after{
+     	content: '';
+     	position: absolute;
+     	width: 100%;
+     	height: 4px;
+     	background-color: #fff;
+     	left: 0;
+     }
+
+     .menu_burger:before{
+          	top: 0;
+          }
+
+     .menu_burger:after{
+     	bottom: 0;
+     }
+
+     .menu_burger span{
+     	position: absolute;
+     	width: 100%;
+     	height: 4px;
+     	background-color: #fff;
+     	left: 0;
+     	top: 17px;
+     }*/
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.container{
+		max-width: 750px;
+	}
+
+	.biba,.boba,.welcome:before {
+		visibility: hidden;
+	}
+
+	.welcome {
+		margin: -200px 0 0 0;
+		background: linear-gradient(#20191b 57%,#000 57%, #af1c1a 57% ,#901815 100%);
+	}
+
+	.menu {
+		padding: 50px 0;
+		justify-content: center;
+	}
+
+	.left h3,.personal_trainee:before,.personal_trainee:after
+	,.price:before,.price:after,.fitness h3,.look_here h3,.team:after
+	,.team h3{
+		visibility: hidden;
+	}
+
+	.about_title{
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 0 50px 0;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.left {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.image {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image img {
+		margin: 0;
+	}
+
+	.right {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.right p {
+		width: 45%;
+	}
+
+	.right p+p {
+		width: 45%;
+	}
+
+	.btn_prev{
+left: 5%;
+	}
+
+	.btn_next{
+left: 90%
+	}
+
+	.trainee_more {
+		margin: 0 auto;
+		text-align: center;
+		padding: 50px 0;
+	}
+
+	.week {
+		justify-content: space-between;
+	}
+
+	.week li {
+		margin: 0;
+	}
+
+	.look_here {
+		flex-direction: column;
+	}
+
+	.schedule {
+		padding: 0;
+	}
+
+	.time_training {
+		justify-content: space-around;
+	}
+
+	.time_training li{
+		padding: 15px 10px;
+		margin: 0 0 15px 0;
+
+	}
+
+	.kalendar {
+		margin: 0 auto;
+		display: none;
+	}
+
+	.money {
+		flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0 100px 0;
+	}
+
+
+	.info_money {
+		padding: 0 0 50px 0;
+		margin: 0 10px;
+	}
+
+	.team_content {
+		padding: 0 0 50px 0;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+	}
+
+	.team_content img {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: none;
+	}
+
+	.trainee_info {
+		position: relative;
+        width: 100%;
+        left: 15%;
+        margin: 20px 0;
+	}
+
+
+    .prev{
+        bottom: -5%;
+    }
+
+    .next {
+    	bottom: -5%;
+    }
+
+
+    .team {
+    	padding: 50px 0;
+    }
+	.coach img {
+		display: none;
+	}
+
+
+	form {
+		flex-direction: column;
+		align-items: center;
+	}
+    
+    input {
+    	margin: 0;
+    	width: 70%;
+    }
+
+    input + input {
+    	margin: 10px 0;
+
+    	width: 70%;
+    }
+
+    textarea {
+    	width: 70%;
+    }
+
+    #map {
+    	display: none;
+    }
+
+    .footer_form:before, .footer_form:after {
+    	visibility: hidden;
+    }
+
+    .menu_social {
+    margin: -40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .menu_social h2 {
+    	margin: 0 25px 0 0;
+    }
+
+    .social {
+    	margin: -85px 0 0 25px;
+    }
+
+    .last p {
+    	text-align: center;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+     .container{
+     	width: none;
+     }
+
+     .left h3,.personal_trainee:before,.personal_trainee:after
+	,.price:before,.price:after,.fitness h3,.look_here h3,.team:after
+	,.team h3,.footer_form:before, .footer_form:after
+	,.biba,.boba,.welcome:before{
+		visibility: hidden;
+	}
+
+	.coach img {
+		display: none;
+	}
+
+	.kalendar {
+		display: none;
+	}
+    .fitness img{
+    	width: 100%;
+    }
+
+    .left img{
+    	width: 100%;
+    }
+
+    .main_content{
+    	flex-direction: column;
+    	justify-content: center;
+    }
+
+    .sing_up {
+    	margin: 0;
+    }
+}
